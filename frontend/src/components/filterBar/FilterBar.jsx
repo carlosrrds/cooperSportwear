@@ -127,17 +127,17 @@ const FilterSideBar = () => {
       <div onClick={handleShow} className="filter-bar d-flex justify-content-center align-items-center" style={{ height: '40px', backgroundColor: '#FFFFFF', borderBottom: '1px solid #1F1F1F', cursor: 'pointer' }}>
         MENU
       </div>
-      <Offcanvas show={show} onHide={handleClose} placement="top" style={{ height: '100vh' }}>
+      <Offcanvas show={show} onHide={handleClose} placement="top" style={{ height: '100vh', overflowY: 'auto' }}>
         <Offcanvas.Header closeButton />
-        <Card.Body style={{ width: '90%', margin: '10px auto', }}>
-        <Button 
-          variant="secondary" 
-          className="mb-3 w-100" 
-          onClick={handleClearFilters}
-          style={{ color: '#1F1F1F', backgroundColor: 'transparent' }}
-        >
-          Limpar Filtros
-        </Button>
+        <Card.Body style={{ width: '90%', margin: '10px auto' }}>
+          <Button 
+            variant="secondary" 
+            className="mb-3 w-100" 
+            onClick={handleClearFilters}
+            style={{ color: '#1F1F1F', backgroundColor: 'transparent' }}
+          >
+            Limpar Filtros
+          </Button>
           <Form onSubmit={handleSubmit}>
             <Card.Title className="text-gold mb-3">Preço</Card.Title>
             <Form.Group controlId="minPrice">
