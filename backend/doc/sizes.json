@@ -1,0 +1,12 @@
+{
+    "sizes": [
+  { "name": "PP" },
+  { "name": "P" },
+  { "name": "M" },
+  { "name": "G" },
+  { "name": "GG" },
+  { "name": "XG" },
+  { "name": "XXG" },
+  { "name": "3G" },
+  { "name": "4G" }
+]}
