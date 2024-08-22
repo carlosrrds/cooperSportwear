@@ -6,7 +6,7 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Offcanvas, Form, Button, Card, Row, Col } from 'react-bootstrap';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-const FilterBar = () => {
+const FilterSideBar = () => {
   const { width } = useWindowSize();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -250,4 +250,4 @@ const FilterBar = () => {
   );
 };
 
-export default FilterBar;
+export default FilterSideBar;
