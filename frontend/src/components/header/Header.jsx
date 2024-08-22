@@ -3,7 +3,7 @@
 import { TiShoppingCart } from 'react-icons/ti';
 import Logo from './logo/Logo';
 import SearchBar from './searchBar/SearchBar';
-import { useWindowSize } from '../hooks/useWindowSize';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 const Header = () => {
   const { width } = useWindowSize();

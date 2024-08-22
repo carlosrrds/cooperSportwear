@@ -3,9 +3,9 @@
 import React from 'react';
 import ProductList from './productList/ProductList';
 import FiltersSideBar from './filterSideBar/FiltersSideBar';
-import PaginationControls from './PaginationControls';
-import { useWindowSize } from '../hooks/useWindowSize';
-import { useProductList } from '../hooks/useProductList'
+import PaginationControls from './paginationControls/PaginationControls';
+import { useWindowSize } from '../../hooks/useWindowSize';
+import { useProductList } from '../../hooks/useProductList'
 import { useSearchParams } from 'next/navigation';
 
 const Showcase = () => {
