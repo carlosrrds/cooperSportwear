@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import ProductDetailsModal from './ProductDetailsModal';
+import ProductDetailsModal from '../productDetailsModal/ProductDetailsModal';
 
 const ProductCard = ({ product }) => {
   const { image_url, name, price, details } = product;
