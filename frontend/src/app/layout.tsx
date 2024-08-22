@@ -1,4 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/reset.css"
+
+import Header from "../components/header/Header"; 
+import FilterBar from "../components/filterBar/FilterBar"
 
 export default function RootLayout({
   children,
@@ -8,7 +12,9 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body>
-        {children}
+          <Header />
+          <FilterBar/>
+          {children}
       </body>
     </html>
   );
