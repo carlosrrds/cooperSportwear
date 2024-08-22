@@ -6,6 +6,8 @@ Instruções para execução do projeto:
 Documentação da API:
 Consulte a documentação da API no Postman. No Postman, há exemplos de cada requisição disponíveis para testes.
 
+link do postman: https://documenter.getpostman.com/view/30335356/2sAXjDevNt
+
 Instalação do Backend:
 No terminal, acesse a pasta backend e execute o comando yarn install.
 
