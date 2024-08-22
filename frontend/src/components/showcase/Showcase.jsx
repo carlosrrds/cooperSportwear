@@ -12,10 +12,9 @@ const Showcase = () => {
   const searchParams = useSearchParams();
   const { width } = useWindowSize();
 
-  const { productList, error, isLoading, pagination} = useProductList({filters: searchParams})
+  const { productList, isLoading, pagination } = useProductList({ filters: searchParams });
 
-  if (isLoading) return <p>isLoading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (isLoading) return <p>Carregando...</p>;
 
   return (
     <div className="container-fluid d-flex justify-content-center" style={{ padding: '20px 0' }}>
@@ -25,13 +24,19 @@ const Showcase = () => {
             <FiltersSideBar />
           </div>
         )}
-        <div className="product-list flex-grow-1">
-          <ProductList products={productList} />
-          <PaginationControls
-            currentPage={pagination.currentPage}
-            lastPage={pagination.lastPage}
-          />
-        </div>
+        {productList.length > 0 ? (
+          <div className="product-list flex-grow-1">
+            <ProductList products={productList} />
+            <PaginationControls
+              currentPage={pagination.currentPage || 1}
+              lastPage={pagination.lastPage || 1}
+            />
+          </div>
+        ) : (
+          <div className="no-products-found flex-grow-1 d-flex justify-content-center align-items-center">
+            <p style={{ fontSize: '1.5rem', color: '#555' }}>Nenhum produto encontrado.</p>
+          </div>
+        )}
       </div>
     </div>
   );
