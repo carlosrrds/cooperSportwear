@@ -1,6 +1,6 @@
 # cooperSportwear
 
-Este projeto foi desenvolvido pelo programador Carlos Roberto com o intuito de demonstrar suas habilidades e conhecimentos em desenvolvimento de software.
+Este projeto foi desenvolvido pelo desenvolvedor web mobile Carlos Roberto com o intuito de demonstrar suas habilidades, conhecimentos e capacidade de aprenzidado.
 
 Instruções para execução do projeto:
 Documentação da API:
